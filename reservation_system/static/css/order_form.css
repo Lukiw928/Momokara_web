@@ -1,0 +1,115 @@
+header{
+    display: flex;
+    padding: 0.5rem 1rem;
+    background-color: #f8e80b;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    position: absolute;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+
+.to_classification_btn{
+    margin-right: auto;
+    font-size: 1rem;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #EC407A;
+	border: 2px solid #EC407A;
+	border-radius: 2rem;
+	transition: .4s;
+    margin-left: 0.5rem;
+}
+.to_classification_btn:hover {
+	background: #EC407A;
+	color: #fff;
+}
+
+#table{
+    margin: 0.5rem;
+}
+
+.table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 0.8em;
+}
+.table th {
+    padding: 10px;
+    background: #e9faf9;
+    border: solid 1px #778ca3;
+}
+.table td {
+    padding: 10px;
+    border: solid 1px #778ca3;
+}
+
+#table h2{
+    text-align: center;
+    margin: 1rem;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button{
+    font-size: 1rem;
+	padding: 0.6em;
+	text-align: center;
+	text-decoration: none;
+	color: #EC407A;
+	border: 2px solid #EC407A;
+	border-radius: 2rem;
+	transition: .4s;
+    margin: auto;
+}
+.btn button:hover {
+	background: #EC407A;
+	color: #fff;
+}
+
+@media screen and (max-width: 2000px) {
+    #table{
+        margin: 0.5rem 20%;
+    }
+    .table{
+        font-size: 1.2rem;
+    }
+    #table h2{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #table{
+        margin: 0.5rem 10%;
+    }
+    .table{
+        font-size: 1rem;
+    }
+    #table h2{
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #table{
+        margin: 0.5rem;
+    }
+    .table{
+        font-size: 0.8rem;
+    }
+    #table h2{
+        font-size: 1.5rem;
+    }
+}

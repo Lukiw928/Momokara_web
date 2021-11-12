@@ -1,0 +1,120 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8e80b;
+    padding: 0.5rem 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    border:2px solid black;
+    padding: 2px;
+    margin: auto;
+}
+
+.introduction, .guide{
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 130%;
+}
+
+.introduction p{
+    padding-top: 3rem;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.title h1{
+    font-size: 2.5rem;
+    padding-left: 1.5rem;
+    line-height: 130%;
+}
+
+.title img{
+    width: 30%;
+}
+
+.to_classification a{
+    padding: 0.8em 3em;
+	text-align: center;
+	text-decoration: none;
+	color: #EC407A;
+	border: 2px solid #EC407A;
+	border-radius: 2rem;
+	transition: .4s;
+}
+.to_classification a:hover {
+	background: #EC407A;
+	color: #fff;
+}
+
+.introduction_list{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-size: 1.2rem;
+    padding-top: 4rem;  
+}
+
+ul{
+    border-top: solid #1e366a 1px;
+    border-bottom: solid #1e366a 1px;
+    padding: 0.5em 0 0.5em 1.5em;
+}
+  
+ul li, ol li{
+    line-height: 1.5;
+    padding: 0.5em 0;
+}
+
+.guide_title{
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.guide_list{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-size: 1.2rem;
+    padding-top: 2rem;  
+}
+
+ol {
+    background: #fcfcfc;
+    padding: 0.5em 0.5em 0.5em 2em;
+    border: solid 3px gray;
+}
+  
+ol li {
+    line-height: 1.5;
+    padding: 0.5em 0;
+}
+
+.guide p{
+    padding: 2rem;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 510px){
+    header h1{
+        font-size: 1.3rem;
+        padding: 0.8rem;
+    }
+    .introduction, .guide{
+        font-size: 1.3rem;
+    }
+    .title h1{
+        font-size: 1.6rem;
+    }
+    .title img{
+        width: 40%;
+    }
+}

@@ -1,0 +1,100 @@
+header{
+    display: flex;
+    padding: 0.5rem 1rem;
+    background-color: #f8e80b;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    position: absolute;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+
+.to_order_form_btn{
+    margin-right: auto;
+    font-size: 1rem;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #EC407A;
+	border: 2px solid #EC407A;
+	border-radius: 2rem;
+	transition: .4s;
+    margin-left: 0.5rem;
+}
+.to_order_form_btn:hover {
+	background: #EC407A;
+	color: #fff;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+ul {
+    padding: 1rem;
+}
+
+li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn h2{
+    font-size: 1rem;
+    border: solid 2px black;
+    padding: 0.8rem;
+}
+
+.save_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save_btn a{
+    margin: auto;
+    font-size: 1rem;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #EC407A;
+	border: 2px solid #EC407A;
+	border-radius: 2rem;
+	transition: .4s;
+
+}
+
+.save_btn a:hover {
+	background: #EC407A;
+	color: #fff;
+}
+
+@media screen and (max-width: 2000px){
+    ul {
+        padding: 1rem 15%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    ul {
+        padding: 1rem 10%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    ul {
+        padding: 1rem;
+    }
+}

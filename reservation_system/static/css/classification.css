@@ -1,0 +1,157 @@
+.hidden {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color: #f8e80b;
+    padding: 0.5rem 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+header .order_form, header .to_first_screen{
+    position: relative;
+}
+
+header .to_first_screen{
+    font-size: 1rem;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #EC407A;
+	border: 2px solid #EC407A;
+	border-radius: 2rem;
+	transition: .4s;
+    margin-left: auto;
+    margin-right: 2rem
+}
+a.to_first_screen:hover {
+	background: #EC407A;
+	color: #fff;
+}
+
+
+header .order_form .order_cnt {
+    position: absolute;
+    top: -4px;
+    left: -12px;
+    width: 1.2rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 0.8rem;
+}
+
+header .order_form .order_form_icon img {
+    width: 40px;
+}
+
+/* header .order_form .login{
+    margin: 0rem 1rem 3rem 1rem;
+} */
+
+#wrapper {
+    width: 100%;
+}
+
+.item_wrapper {
+    margin: 2rem;
+}
+
+.item_wrapper .item_list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.item{
+    position: relative; 
+}
+
+.item a{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.item_wrapper .item_list .item {
+    width: calc(100% / 4 - 1rem);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 2px solid #a34d2b;
+    box-sizing: border-box;
+    color: #000000;
+}
+
+.item_wrapper .item_list .item .item_img {
+    width: 56%;
+    margin: 1rem  auto;
+}
+
+.item_wrapper .item_list .item .item_img img {
+    width: 100%;
+}
+
+.item_wrapper .item_list .item_textbox .item_title h2{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.go_cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.go_cart a{
+    margin: 0.5rem 5rem;
+    font-size: 1rem;
+	padding: 0.6em 1.5rem;
+	text-align: center;
+	text-decoration: none;
+	color: #EC407A;
+	border: 2px solid #EC407A;
+	border-radius: 2rem;
+	transition: .4s;
+}
+.go_cart a:hover {
+	background: #EC407A;
+	color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .item_wrapper .item_list .item {
+      width: calc(100% / 2 - 1rem);
+    }
+}
+
+@media screen and (max-width: 480px){
+    header h1{
+        font-size: 1.3rem;
+    }
+    header .to_first_screen{
+        font-size: 0.5rem;
+        margin-right: 1rem;
+    }
+
+    .item_wrapper .item_list .item{
+        width: 43%;
+        /* padding: 1rem; */
+    }
+    .item_wrapper .item_list .item_textbox .item_title h2{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,59 @@
+<!-- オープニング画面 -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <Title>ももからこーたろー 簡単会計アプリ</Title>
+        <link rel="stylesheet" href="{% static 'css/html5reset-1.6.1.css' %}">
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+        <!-- <script src="js/index.js"></script> -->
+    </head>
+
+    <body>
+
+        <header>
+            <h1>お持ち帰り専用</h1>
+        </header>
+        
+        <!-- タイトル画面 -->
+        <div class="introduction">
+            <p>ようこそ！<br>ももからこーたろー</p>
+            <div class="title">
+                <img src="{% static 'img/character/opening.png' %}" alt="">
+                <h1>ご利用代金<br>計算アプリ</h1>
+            </div>
+            <div class="to_classification">
+                <a href="../classification">はじめる</a>
+            </div>
+            <div class="introduction_list">
+                <ul>
+                    <li>大人数でのご注文に各自の代金や合計金額を表示</li>
+                    <li>事前に代金の把握が可能</li>
+                    <li>商品は消費税込みの価格です</li>
+                </ul>
+            </div>
+        </div>
+        <div class="guide">
+            <div class="guide_title">
+                <h1 id="guide_screen"><del>　　　　</del>使い方ガイド<del>　　　　</del></h1>
+            </div>
+            <div class="guide_list">
+                <ol>
+                    <li>種別を選択</li>
+                    <li>お料理を選択</li>
+                    <li>サイズやご飯大盛り等のオプションを選択</li>
+                    <li>決定ボタンを押すだけ</li>
+                </ol>
+            </div>
+            <p>※ 納品書形式で表示されます</p>
+        </div>
+            
+        <!-- タイトル画面終了 -->
+
+    </body>
+
+</html>
